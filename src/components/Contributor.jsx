@@ -3,7 +3,7 @@ import React from "react";
 const Contributor = () => {
   const team = [
     {
-      avatar:"C:\Users\Devendra Gurnani\OneDrive\Desktop\sde project 2\Automated-Resume-Maker\src\components\images\images1.jpeg",
+      avatar:"images/images1.jpeg",
       name: "Devendra Gurnani",
       title: "Frontend Developer",
       desc: "Web Innovator, Tech Enthusiast, Distributed Ledger",
