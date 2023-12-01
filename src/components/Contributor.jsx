@@ -3,12 +3,11 @@ import React from "react";
 const Contributor = () => {
   const team = [
     {
-      avatar:
-        "https://media.licdn.com/dms/image/D5603AQGIGapy-hYhtg/profile-displayphoto-shrink_400_400/0/1684462806428?e=1697673600&v=beta&t=8LqO86gqTU5f1C7iTvlnnhjwMJE1wGXgGvbbddGKPnk",
+      avatar:"images/images1.jpeg",
       name: "Devendra Gurnani",
       title: "Frontend Developer",
       desc: "Web Innovator, Tech Enthusiast, Distributed Ledger",
-      linkedin: "javascript:void(0)",
+      linkedin: "https://www.linkedin.com/in/devendra-gurnani-653a51256/",
       twitter: "javascript:void(0)",
     },
     {
@@ -17,28 +16,28 @@ const Contributor = () => {
       name: "Bikram Narayan Dhanraj",
       title: "Frontend and Backend Developer",
       desc: "Creative Designer of User Experiences,  Maestro of Frontend and Backend Design",
-      linkedin: "javascript:void(0)",
+      linkedin: "https://www.linkedin.com/in/bikram-narayan/",
       twitter: "javascript:void(0)",
     },
     {
-      avatar:
-        "https://media.licdn.com/dms/image/D5603AQE7S43cHsZ5nA/profile-displayphoto-shrink_400_400/0/1676894690271?e=1697673600&v=beta&t=18qk23ZMd4rABLN9ipl-5OdJpsLq5qSwaRgG1JBuLI8",
+      avatar:"https://media.licdn.com/dms/image/D5603AQE7S43cHsZ5nA/profile-displayphoto-shrink_400_400/0/1676894690271?e=1697673600&v=beta&t=18qk23ZMd4rABLN9ipl-5OdJpsLq5qSwaRgG1JBuLI8",
       name: "Gamanaram Harjiram Choudhary",
       title: "Backend Developer",
       desc: "Backend Architect, Database Dynamo, Logic Wizard, Backend Development Prodigy.",
-      linkedin: "javascript:void(0)",
+      linkedin: "https://www.linkedin.com/in/gamnaram-choudhary-67860a190/",
       twitter: "javascript:void(0)",
     },
   ];
 
   return (
-    <section className="py-14 mt-10 bg-gray-800">
+    <section className="py-14 mt-10">
+      <img src="" alt="" />
       <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
         <div className="max-w-xl mx-auto">
-          <h3 className="text-gray-100 text-3xl font-semibold sm:text-4xl">
+          <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Meet our team
           </h3>
-          <p className=" text-white mt-3">
+          <p className="text-gray-600 mt-3">
             Synergetic Experts Crafting Innovative Coffee Matchmaking
             Experience.
           </p>
@@ -55,15 +54,15 @@ const Contributor = () => {
                   />
                 </div>
                 <div className="mt-2">
-                  <h4 className="text-white  font-semibold sm:text-lg">
+                  <h4 className="text-gray-700 font-semibold sm:text-lg">
                     {item.name}
                   </h4>
                   <p className="text-indigo-600">{item.title}</p>
-                  <p className="text-gray-200 mt-2">{item.desc}</p>
+                  <p className="text-gray-600 mt-2">{item.desc}</p>
                   <div className="mt-4 flex justify-center gap-4 text-gray-400">
                     <a href={item.twitter}>
                       <svg
-                        className="w-5 h-5 duration-150 hover:text-white-500"
+                        className="w-5 h-5 duration-150 hover:text-gray-500"
                         fill="currentColor"
                         viewBox="0 0 48 48"
                       >
