@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contributor from "../Contributor";
-
+import Features from "../Feature";
 export default () => {
   // Replace javascript:void(0) path with your path
   const navigation = [
@@ -79,6 +79,7 @@ export default () => {
           />
         </div>
       </section>
+      <Features />
       <Contributor />
     </div>
   );

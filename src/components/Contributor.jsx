@@ -32,13 +32,13 @@ const Contributor = () => {
   ];
 
   return (
-    <section className="py-14 mt-10">
+    <section className="py-14 mt-10 bg-gray-800">
       <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
         <div className="max-w-xl mx-auto">
-          <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          <h3 className="text-gray-100 text-3xl font-semibold sm:text-4xl">
             Meet our team
           </h3>
-          <p className="text-gray-600 mt-3">
+          <p className=" text-white mt-3">
             Synergetic Experts Crafting Innovative Coffee Matchmaking
             Experience.
           </p>
@@ -55,15 +55,15 @@ const Contributor = () => {
                   />
                 </div>
                 <div className="mt-2">
-                  <h4 className="text-gray-700 font-semibold sm:text-lg">
+                  <h4 className="text-white  font-semibold sm:text-lg">
                     {item.name}
                   </h4>
                   <p className="text-indigo-600">{item.title}</p>
-                  <p className="text-gray-600 mt-2">{item.desc}</p>
+                  <p className="text-gray-200 mt-2">{item.desc}</p>
                   <div className="mt-4 flex justify-center gap-4 text-gray-400">
                     <a href={item.twitter}>
                       <svg
-                        className="w-5 h-5 duration-150 hover:text-gray-500"
+                        className="w-5 h-5 duration-150 hover:text-white-500"
                         fill="currentColor"
                         viewBox="0 0 48 48"
                       >
