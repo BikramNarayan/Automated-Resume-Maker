@@ -3,12 +3,11 @@ import React from "react";
 const Contributor = () => {
   const team = [
     {
-      avatar:
-        "https://media.licdn.com/dms/image/D5603AQGIGapy-hYhtg/profile-displayphoto-shrink_400_400/0/1684462806428?e=1697673600&v=beta&t=8LqO86gqTU5f1C7iTvlnnhjwMJE1wGXgGvbbddGKPnk",
+      avatar:"C:\Users\Devendra Gurnani\OneDrive\Desktop\sde project 2\Automated-Resume-Maker\src\components\images\images1.jpeg",
       name: "Devendra Gurnani",
       title: "Frontend Developer",
       desc: "Web Innovator, Tech Enthusiast, Distributed Ledger",
-      linkedin: "javascript:void(0)",
+      linkedin: "https://www.linkedin.com/in/devendra-gurnani-653a51256/",
       twitter: "javascript:void(0)",
     },
     {
@@ -17,22 +16,22 @@ const Contributor = () => {
       name: "Bikram Narayan Dhanraj",
       title: "Frontend and Backend Developer",
       desc: "Creative Designer of User Experiences,  Maestro of Frontend and Backend Design",
-      linkedin: "javascript:void(0)",
+      linkedin: "https://www.linkedin.com/in/bikram-narayan/",
       twitter: "javascript:void(0)",
     },
     {
-      avatar:
-        "https://media.licdn.com/dms/image/D5603AQE7S43cHsZ5nA/profile-displayphoto-shrink_400_400/0/1676894690271?e=1697673600&v=beta&t=18qk23ZMd4rABLN9ipl-5OdJpsLq5qSwaRgG1JBuLI8",
+      avatar:"https://media.licdn.com/dms/image/D5603AQE7S43cHsZ5nA/profile-displayphoto-shrink_400_400/0/1676894690271?e=1697673600&v=beta&t=18qk23ZMd4rABLN9ipl-5OdJpsLq5qSwaRgG1JBuLI8",
       name: "Gamanaram Harjiram Choudhary",
       title: "Backend Developer",
       desc: "Backend Architect, Database Dynamo, Logic Wizard, Backend Development Prodigy.",
-      linkedin: "javascript:void(0)",
+      linkedin: "https://www.linkedin.com/in/gamnaram-choudhary-67860a190/",
       twitter: "javascript:void(0)",
     },
   ];
 
   return (
     <section className="py-14 mt-10">
+      <img src="" alt="" />
       <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
         <div className="max-w-xl mx-auto">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
