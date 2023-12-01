@@ -87,7 +87,7 @@ function Body() {
         />
       </div>
       <div className={styles.main}>
-        <div style={{display:"flex",flexWrap:"wrap"}}>
+        <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
           <Editor
             sections={sections}
             information={resumeInformation}
