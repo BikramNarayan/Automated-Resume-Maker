@@ -3,7 +3,7 @@ import React from "react";
 const Contributor = () => {
   const team = [
     {
-      avatar:"images/images1.jpeg",
+      avatar: "images/images1.jpeg",
       name: "Devendra Gurnani",
       title: "Frontend Developer",
       desc: "Web Innovator, Tech Enthusiast, Distributed Ledger",
@@ -20,7 +20,8 @@ const Contributor = () => {
       twitter: "javascript:void(0)",
     },
     {
-      avatar:"https://media.licdn.com/dms/image/D5603AQE7S43cHsZ5nA/profile-displayphoto-shrink_400_400/0/1676894690271?e=1697673600&v=beta&t=18qk23ZMd4rABLN9ipl-5OdJpsLq5qSwaRgG1JBuLI8",
+      avatar:
+        "https://media.licdn.com/dms/image/D5603AQE7S43cHsZ5nA/profile-displayphoto-shrink_400_400/0/1676894690271?e=1697673600&v=beta&t=18qk23ZMd4rABLN9ipl-5OdJpsLq5qSwaRgG1JBuLI8",
       name: "Gamanaram Harjiram Choudhary",
       title: "Backend Developer",
       desc: "Backend Architect, Database Dynamo, Logic Wizard, Backend Development Prodigy.",
@@ -30,14 +31,14 @@ const Contributor = () => {
   ];
 
   return (
-    <section className="py-14 mt-10">
+    <section className="py-14 mt-10 bg-gray-800">
       <img src="" alt="" />
       <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
         <div className="max-w-xl mx-auto">
-          <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          <h3 className="text-gray-100 text-3xl font-semibold sm:text-4xl">
             Meet our team
           </h3>
-          <p className="text-gray-600 mt-3">
+          <p className="text-gray-400 mt-3">
             Synergetic Experts Crafting Innovative Coffee Matchmaking
             Experience.
           </p>
@@ -54,11 +55,11 @@ const Contributor = () => {
                   />
                 </div>
                 <div className="mt-2">
-                  <h4 className="text-gray-700 font-semibold sm:text-lg">
+                  <h4 className="text-gray-100 font-semibold sm:text-lg">
                     {item.name}
                   </h4>
                   <p className="text-indigo-600">{item.title}</p>
-                  <p className="text-gray-600 mt-2">{item.desc}</p>
+                  <p className="text-gray-300 mt-2">{item.desc}</p>
                   <div className="mt-4 flex justify-center gap-4 text-gray-400">
                     <a href={item.twitter}>
                       <svg
