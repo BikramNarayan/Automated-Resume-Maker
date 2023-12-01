@@ -3,7 +3,8 @@ import React from "react";
 const Contributor = () => {
   const team = [
     {
-      avatar: "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=740&t=st=1701462746~exp=1701463346~hmac=c12befed53aa53a563a48fc74df6d91bd098acf46cab81037a8c194c20fdfcaf",
+      avatar:
+        "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?w=740&t=st=1701462746~exp=1701463346~hmac=c12befed53aa53a563a48fc74df6d91bd098acf46cab81037a8c194c20fdfcaf",
       name: "Devendra Gurnani",
       title: "Frontend Developer",
       desc: "Web Innovator, Tech Enthusiast, Distributed Ledger",
@@ -20,7 +21,8 @@ const Contributor = () => {
       twitter: "javascript:void(0)",
     },
     {
-      avatar: "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?w=740&t=st=1701463019~exp=1701463619~hmac=f6f0398ef19a145d0151030dd53a6f08b1f3220fa15009c7636152e0960afda1",
+      avatar:
+        "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg?w=740&t=st=1701463019~exp=1701463619~hmac=f6f0398ef19a145d0151030dd53a6f08b1f3220fa15009c7636152e0960afda1",
       name: "Gamanaram Harjiram Choudhary",
       title: "Backend Developer",
       desc: "Backend Architect, Database Dynamo, Logic Wizard, Backend Development Prodigy.",
@@ -30,7 +32,7 @@ const Contributor = () => {
   ];
 
   return (
-    <section className="py-14 mt-10">
+    <section className="py-14 mt-10 bg-gray-800">
       <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
         <div className="max-w-xl mx-auto">
           <h3 className="text-gray-100 text-3xl font-semibold sm:text-4xl">

@@ -10,7 +10,7 @@ export default () => {
   ];
 
   return (
-    <div className="bg-gray-900 h-[80vh]">
+    <div className="bg-gray-900 h-[70vh]">
       <header>
         <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
           {/* <a href="javascript:void(0)">
