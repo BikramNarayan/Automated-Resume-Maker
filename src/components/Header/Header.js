@@ -65,7 +65,7 @@ export default () => {
             </a>
             {/* getting error here */}
             <a
-              href="javascript:void(0)"
+              href="/make"
               className="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto"
             >
               Try it out
