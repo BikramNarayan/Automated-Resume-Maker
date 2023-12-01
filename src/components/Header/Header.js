@@ -16,7 +16,7 @@ export default () => {
           {/* <a href="javascript:void(0)">
             <img src={logo} width={120} height={70} alt="Float UI logo" />
           </a> */}
-          <ul className="py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end">
+          {/* <ul className="py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end">
             {navigation.map((item, idx) => (
               <li className="text-gray-200" key={idx}>
                 <a href={item.path}>{item.title}</a>
@@ -42,7 +42,7 @@ export default () => {
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> */}
         </nav>
       </header>
       <section className="mt-24 mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8">
