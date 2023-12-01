@@ -87,17 +87,19 @@ function Body() {
         />
       </div>
       <div className={styles.main}>
-        <Editor
-          sections={sections}
-          information={resumeInformation}
-          setInformation={setResumeInformation}
-        />
-        <Resume
-          ref={resumeRef}
-          sections={sections}
-          information={resumeInformation}
-          activeColor={activeColor}
-        />
+        <div style={{display:"flex",flexWrap:"wrap"}}>
+          <Editor
+            sections={sections}
+            information={resumeInformation}
+            setInformation={setResumeInformation}
+          />
+          <Resume
+            ref={resumeRef}
+            sections={sections}
+            information={resumeInformation}
+            activeColor={activeColor}
+          />
+        </div>
       </div>
     </div>
   );
