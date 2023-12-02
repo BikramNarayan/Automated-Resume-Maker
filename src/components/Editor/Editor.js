@@ -20,7 +20,8 @@ function Editor(props) {
     sections[Object.keys(sections)[0]]
   );
   const [values, setValues] = useState({
-    name: activeInformation?.detail?.name || "",
+    name:
+      activeInformation?.detail?.name ||"",
     title: activeInformation?.detail?.title || "",
     linkedin: activeInformation?.detail?.linkedin || "",
     github: activeInformation?.detail?.github || "",
@@ -42,8 +43,7 @@ function Editor(props) {
           label="Title"
           placeholder="Enter title eg. Frontend developer"
           value={values.title}
-          onChange={(event) =>
-            setValues((prev) => ({ ...prev, title: event.target.value }))
+          onChange={(event) => setValues((prev) => ({ ...prev, title: event.target.value }))
           }
         />
         <InputControl
