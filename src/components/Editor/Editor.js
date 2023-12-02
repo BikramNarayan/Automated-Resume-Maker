@@ -483,7 +483,7 @@ function Editor(props) {
 
   useEffect(() => {
     handleSubmission();
-  },[values]);
+  }, [values]);
 
   const handleAddNew = () => {
     const details = activeInformation?.details;
@@ -536,16 +536,18 @@ function Editor(props) {
       companyName: activeInfo?.details
         ? activeInfo.details[0]?.companyName || "Microsoft"
         : "",
-      college: activeInfo?.details ? activeInfo.details[0]?.college || "" : "",
+      college: activeInfo?.details
+        ? activeInfo.details[0]?.college || "IIIT LUCKNOW"
+        : "",
       location: activeInfo?.details
         ? activeInfo.details[0]?.location || "Noida, Uttar Pradesh."
         : "",
       startDate: activeInfo?.details
         ? activeInfo.details[0]?.startDate || "01/01/2020"
-        : "",
+        : "01/01/2020",
       endDate: activeInfo?.details
         ? activeInfo.details[0]?.endDate || "30//11/2023"
-        : "",
+        : "30//11/2023",
       points: activeInfo?.details
         ? activeInfo.details[0]?.points
           ? [...activeInfo.details[0]?.points]
@@ -554,19 +556,22 @@ function Editor(props) {
         ? [...activeInfo.points]
         : "",
       title: activeInfo?.details
-        ? activeInfo.details[0]?.title || ""
-        : activeInfo?.detail?.title || "Software Developer",
+        ? activeInfo.details[0]?.title || "Software Developer"
+        : activeInfo?.detail?.title || "",
       linkedin:
         activeInfo?.detail?.linkedin ||
         "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
       github: activeInfo?.details
-        ? activeInfo.details[0]?.github || ""
-        : activeInfo?.detail?.github ||
-          "https://github.com/Gamanaram-Choudhary",
+        ? activeInfo.details[0]?.github ||
+          "https://github.com/Gamanaram-Choudhary"
+        : activeInfo?.detail?.github || "",
       phone: activeInfo?.detail?.phone || "9082563728",
       email:
         activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
-      summary: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
+      summary:
+        typeof activeInfo?.detail !== "object"
+          ? activeInfo.detail
+          : " Enthusiastic and detail-oriented professional with a strong background in computer science, showcasing proficiency in programming languages such as C++ and Python. Eager to contribute innovative solutions and collaborate within a dynamic team environment at Microsoft.",
       other: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
     });
   }, [activeSectionKey]);
