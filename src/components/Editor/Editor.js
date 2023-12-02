@@ -483,7 +483,7 @@ function Editor(props) {
 
   useEffect(() => {
     handleSubmission();
-  });
+  },[values]);
 
   const handleAddNew = () => {
     const details = activeInformation?.details;
