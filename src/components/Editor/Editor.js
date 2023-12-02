@@ -521,7 +521,7 @@ function Editor(props) {
     setSectionTitle(sections[activeSectionKey]);
     setActiveDetailIndex(0);
     setValues({
-      name: activeInfo?.detail?.name || "",
+      name: activeInfo?.detail?.name || "Gamanaram Choudhary",
       overview: activeInfo?.details
         ? activeInfo.details[0]?.overview || ""
         : "",
@@ -530,18 +530,16 @@ function Editor(props) {
         ? activeInfo.details[0]?.certificationLink || ""
         : "",
       companyName: activeInfo?.details
-        ? activeInfo.details[0]?.companyName || ""
+        ? activeInfo.details[0]?.companyName || "Microsoft"
         : "",
-      college: activeInfo?.details
-        ? activeInfo.details[0]?.college || ""
-        : "",
+      college: activeInfo?.details ? activeInfo.details[0]?.college || "" : "",
       location: activeInfo?.details
-        ? activeInfo.details[0]?.location || ""
+        ? activeInfo.details[0]?.location || "Noida, Uttar Pradesh."
         : "",
       startDate: activeInfo?.details
-        ? activeInfo.details[0]?.startDate || ""
+        ? activeInfo.details[0]?.startDate || "01/01/2020"
         : "",
-      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "" : "",
+      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "30//11/2023" : "",
       points: activeInfo?.details
         ? activeInfo.details[0]?.points
           ? [...activeInfo.details[0]?.points]
@@ -551,13 +549,13 @@ function Editor(props) {
         : "",
       title: activeInfo?.details
         ? activeInfo.details[0]?.title || ""
-        : activeInfo?.detail?.title || "",
-      linkedin: activeInfo?.detail?.linkedin || "",
+        : activeInfo?.detail?.title || "Software Developer",
+      linkedin: activeInfo?.detail?.linkedin || "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
       github: activeInfo?.details
         ? activeInfo.details[0]?.github || ""
-        : activeInfo?.detail?.github || "",
-      phone: activeInfo?.detail?.phone || "",
-      email: activeInfo?.detail?.email || "",
+        : activeInfo?.detail?.github || "https://github.com/Gamanaram-Choudhary",
+      phone: activeInfo?.detail?.phone || "9082563728",
+      email: activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
       summary: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
       other: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
     });
