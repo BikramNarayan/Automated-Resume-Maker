@@ -539,7 +539,9 @@ function Editor(props) {
       startDate: activeInfo?.details
         ? activeInfo.details[0]?.startDate || "01/01/2020"
         : "",
-      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "30//11/2023" : "",
+      endDate: activeInfo?.details
+        ? activeInfo.details[0]?.endDate || "30//11/2023"
+        : "",
       points: activeInfo?.details
         ? activeInfo.details[0]?.points
           ? [...activeInfo.details[0]?.points]
@@ -550,12 +552,16 @@ function Editor(props) {
       title: activeInfo?.details
         ? activeInfo.details[0]?.title || ""
         : activeInfo?.detail?.title || "Software Developer",
-      linkedin: activeInfo?.detail?.linkedin || "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
+      linkedin:
+        activeInfo?.detail?.linkedin ||
+        "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
       github: activeInfo?.details
         ? activeInfo.details[0]?.github || ""
-        : activeInfo?.detail?.github || "https://github.com/Gamanaram-Choudhary",
+        : activeInfo?.detail?.github ||
+          "https://github.com/Gamanaram-Choudhary",
       phone: activeInfo?.detail?.phone || "9082563728",
-      email: activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
+      email:
+        activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
       summary: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
       other: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
     });
@@ -571,19 +577,35 @@ function Editor(props) {
 
     const activeInfo = information[sections[activeSectionKey]];
     setValues({
-      overview: activeInfo.details[activeDetailIndex]?.overview || "",
-      link: activeInfo.details[activeDetailIndex]?.link || "",
+      overview:
+        activeInfo.details[activeDetailIndex]?.overview ||
+        "Lorem ipsum overview",
+      link:
+        activeInfo.details[activeDetailIndex]?.link || "https://example.com",
       certificationLink:
-        activeInfo.details[activeDetailIndex]?.certificationLink || "",
-      companyName: activeInfo.details[activeDetailIndex]?.companyName || "",
-      location: activeInfo.details[activeDetailIndex]?.location || "",
-      startDate: activeInfo.details[activeDetailIndex]?.startDate || "",
-      endDate: activeInfo.details[activeDetailIndex]?.endDate || "",
-      points: activeInfo.details[activeDetailIndex]?.points || "",
-      title: activeInfo.details[activeDetailIndex]?.title || "",
-      linkedin: activeInfo.details[activeDetailIndex]?.linkedin || "",
-      github: activeInfo.details[activeDetailIndex]?.github || "",
-      college: activeInfo.details[activeDetailIndex]?.college || "",
+        activeInfo.details[activeDetailIndex]?.certificationLink ||
+        "https://certification.com",
+      companyName:
+        activeInfo.details[activeDetailIndex]?.companyName || "Microsoft",
+      location:
+        activeInfo.details[activeDetailIndex]?.location || "Redmond, WA",
+      startDate:
+        activeInfo.details[activeDetailIndex]?.startDate || "2022-01-01",
+      endDate: activeInfo.details[activeDetailIndex]?.endDate || "2023-01-01",
+      points: activeInfo.details[activeDetailIndex]?.points || [
+        "Achievement 1",
+        "Achievement 2",
+        "Achievement 3",
+      ],
+      title:
+        activeInfo.details[activeDetailIndex]?.title || "Software Engineer",
+      linkedin:
+        activeInfo.details[activeDetailIndex]?.linkedin ||
+        "https://www.linkedin.com/example",
+      github:
+        activeInfo.details[activeDetailIndex]?.github ||
+        "https://www.github.com/example",
+      college: activeInfo.details[activeDetailIndex]?.college || "IIIT Lucknow",
     });
   }, [activeDetailIndex]);
 
