@@ -7,6 +7,7 @@ import Resume from "../Resume/Resume";
 
 import styles from "./Body.module.css";
 import SectionHeader from "../SectionHeader";
+import Contact from "../Contact";
 
 function Body() {
   const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
@@ -61,54 +62,57 @@ function Body() {
   });
 
   return (
-    <div className={styles.container}>
-      {/* <p className={styles.heading}>Resume Builder</p> */}
-      <SectionHeader />
-      <div className={styles.toolbar}>
-        <div className={styles.colors}>
-          {colors.map((item) => (
-            <span
-              key={item}
-              style={{ backgroundColor: item }}
-              className={`${styles.color} ${
-                activeColor === item ? styles.active : ""
-              }`}
-              onClick={() => setActiveColor(item)}
+    <div>
+      <div className={styles.container}>
+        {/* <p className={styles.heading}>Resume Builder</p> */}
+        <SectionHeader />
+        <div className={styles.toolbar}>
+          <div className={styles.colors}>
+            {colors.map((item) => (
+              <span
+                key={item}
+                style={{ backgroundColor: item }}
+                className={`${styles.color} ${
+                  activeColor === item ? styles.active : ""
+                }`}
+                onClick={() => setActiveColor(item)}
+              />
+            ))}
+          </div>
+          <ReactToPrint
+            trigger={() => {
+              return (
+                <button>
+                  Download <ArrowDown />
+                </button>
+              );
+            }}
+            content={() => resumeRef.current}
+          />
+        </div>
+        <div className={styles.main}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+          >
+            <Editor
+              sections={sections}
+              information={resumeInformation}
+              setInformation={setResumeInformation}
             />
-          ))}
-        </div>
-        <ReactToPrint
-          trigger={() => {
-            return (
-              <button>
-                Download <ArrowDown />
-              </button>
-            );
-          }}
-          content={() => resumeRef.current}
-        />
-      </div>
-      <div className={styles.main}>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <Editor
-            sections={sections}
-            information={resumeInformation}
-            setInformation={setResumeInformation}
-          />
-          <Resume
-            ref={resumeRef}
-            sections={sections}
-            information={resumeInformation}
-            activeColor={activeColor}
-          />
+            <Resume
+              ref={resumeRef}
+              sections={sections}
+              information={resumeInformation}
+              activeColor={activeColor}
+            />
+          </div>
         </div>
       </div>
+      <Contact />
     </div>
   );
 }

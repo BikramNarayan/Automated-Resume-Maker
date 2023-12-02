@@ -4,6 +4,7 @@ import { X } from "react-feather";
 import InputControl from "../InputControl/InputControl";
 
 import styles from "./Editor.module.css";
+import Contact from "../Contact";
 
 function Editor(props) {
   const sections = props.sections;
@@ -20,8 +21,7 @@ function Editor(props) {
     sections[Object.keys(sections)[0]]
   );
   const [values, setValues] = useState({
-    name:
-      activeInformation?.detail?.name ||"",
+    name: activeInformation?.detail?.name || "",
     title: activeInformation?.detail?.title || "",
     linkedin: activeInformation?.detail?.linkedin || "",
     github: activeInformation?.detail?.github || "",
@@ -43,7 +43,8 @@ function Editor(props) {
           label="Title"
           placeholder="Enter title eg. Frontend developer"
           value={values.title}
-          onChange={(event) => setValues((prev) => ({ ...prev, title: event.target.value }))
+          onChange={(event) =>
+            setValues((prev) => ({ ...prev, title: event.target.value }))
           }
         />
         <InputControl
@@ -564,7 +565,8 @@ function Editor(props) {
       github: activeInfo?.details
         ? activeInfo.details[0]?.github ||
           "https://github.com/Gamanaram-Choudhary"
-        : activeInfo?.detail?.github || "",
+        : activeInfo?.detail?.github ||
+          "https://github.com/Gamanaram-Choudhary",
       phone: activeInfo?.detail?.phone || "9082563728",
       email:
         activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
