@@ -481,6 +481,10 @@ function Editor(props) {
     }
   };
 
+  useEffect(() => {
+    handleSubmission();
+  },[values]);
+
   const handleAddNew = () => {
     const details = activeInformation?.details;
     if (!details) return;
@@ -666,6 +670,7 @@ function Editor(props) {
         </div>
 
         {generateBody()}
+        {/* {handleSubmission()} */}
 
         <button onClick={handleSubmission}>Save</button>
       </div>
