@@ -481,6 +481,10 @@ function Editor(props) {
     }
   };
 
+  useEffect(() => {
+    handleSubmission();
+  });
+
   const handleAddNew = () => {
     const details = activeInformation?.details;
     if (!details) return;
@@ -539,7 +543,9 @@ function Editor(props) {
       startDate: activeInfo?.details
         ? activeInfo.details[0]?.startDate || "01/01/2020"
         : "",
-      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "30//11/2023" : "",
+      endDate: activeInfo?.details
+        ? activeInfo.details[0]?.endDate || "30//11/2023"
+        : "",
       points: activeInfo?.details
         ? activeInfo.details[0]?.points
           ? [...activeInfo.details[0]?.points]
@@ -550,12 +556,16 @@ function Editor(props) {
       title: activeInfo?.details
         ? activeInfo.details[0]?.title || ""
         : activeInfo?.detail?.title || "Software Developer",
-      linkedin: activeInfo?.detail?.linkedin || "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
+      linkedin:
+        activeInfo?.detail?.linkedin ||
+        "https://www.linkedin.com/in/gamanaram-choudhary-660846258/",
       github: activeInfo?.details
         ? activeInfo.details[0]?.github || ""
-        : activeInfo?.detail?.github || "https://github.com/Gamanaram-Choudhary",
+        : activeInfo?.detail?.github ||
+          "https://github.com/Gamanaram-Choudhary",
       phone: activeInfo?.detail?.phone || "9082563728",
-      email: activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
+      email:
+        activeInfo?.detail?.email || "grinderprojectmanagementteam@gmail.com",
       summary: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
       other: typeof activeInfo?.detail !== "object" ? activeInfo.detail : "",
     });
@@ -644,6 +654,7 @@ function Editor(props) {
         </div>
 
         {generateBody()}
+        {/* {handleSubmission()} */}
 
         <button onClick={handleSubmission}>Save</button>
       </div>
